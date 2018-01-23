@@ -40,7 +40,10 @@ def play_audio(random=False):
         audio_files.sort()
 
     for f in audio_files:
-        playsound(f)
+        try:
+            playsound(f)
+        except:
+            pass
 
 
 def main():
